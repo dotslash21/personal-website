@@ -1,14 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "tinacms server:start -c \"next dev\"",
+    "build": "tinacms server:start -c \"next build\"",
+    "start": "tinacms server:start -c \"next start\""
   },
   "dependencies": {
+    "@tinacms/cli": "^0.60.18",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "styled-components": "^5.3.5",
+    "tinacms": "^0.68.6"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
