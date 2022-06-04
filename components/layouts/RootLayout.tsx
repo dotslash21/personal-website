@@ -1,0 +1,152 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import {
+  FaChartBar,
+  FaEnvelope,
+  FaEnvelopeOpenText,
+  FaFacebook,
+  FaFileAlt,
+  FaGithub,
+  FaLaptopCode,
+  FaLinkedin,
+  FaPaperPlane,
+  FaTwitter,
+  FaUser,
+} from 'react-icons/fa'
+
+type RootLayoutProps = {
+  children: React.ReactNode
+}
+
+const RootLayout = ({ children }: RootLayoutProps) => {
+  return (
+    <div className="flex flex-col lg:flex-row">
+      {/* Sidebar container */}
+      <aside className="w-screen flex-shrink-0 bg-stack lg:w-72 lg:h-screen">
+        {/* Flex container */}
+        <div className="flex flex-col justify-start">
+          {/* Name */}
+          <Link href={'/'}>
+            <h1 className="text-2xl text-center text-white font-bold py-4 cursor-pointer lg:pb-0">
+              Arunangshu Biswas
+            </h1>
+          </Link>
+          {/* Name end */}
+
+          <nav className="hidden flex-col items-center p-6 px-4 lg:flex">
+            {/* Profile section */}
+            <section className="flex flex-col items-center justify-start w-full">
+              {/* Profile picture */}
+              <div className="flex justify-center mb-4">
+                <Image
+                  src={'/personal-website/profile-picture.jpg'}
+                  alt="Profile picture"
+                  width={160}
+                  height={160}
+                  className="rounded-full"
+                />
+              </div>
+              {/* Bio */}
+              <p className="text-white text-center text-sm mb-4">
+                Hi, my name is Arunangshu Biswas and I&apos;m a software
+                engineer. Welcome to my personal website!
+              </p>
+              {/* Social icons */}
+              <div className="flex justify-center space-x-4 py-2 text-white">
+                <a
+                  href={'https://github.com/dotslash21/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                </a>
+                <a
+                  href={'https://www.facebook.com/itsmearunangshu/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                </a>
+                <a
+                  href={'https://twitter.com/arunangshubsws'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                </a>
+                <a
+                  href={'https://www.facebook.com/itsmearunangshu/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                </a>
+                <a
+                  href={'mailto:arunangshubsws@gmail.com'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaEnvelope className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                </a>
+              </div>
+              {/* Divider */}
+              <hr className="my-4 w-full border-gray-300" />
+            </section>
+
+            {/* Page navigation section */}
+            <section className="flex flex-col items-center justify-start w-full">
+              <ul className="flex flex-col w-48 text-white">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                  <FaUser />
+                  <Link href={'/'}>
+                    <span className="font-bold cursor-pointer">About Me</span>
+                  </Link>
+                </li>
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                  <FaLaptopCode />
+                  <Link href={'/portfolio'}>
+                    <span className="font-bold cursor-pointer">Portfolio</span>
+                  </Link>
+                </li>
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                  <FaChartBar />
+                  <Link href={'/skills'}>
+                    <span className="font-bold cursor-pointer">Skills</span>
+                  </Link>
+                </li>
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                  <FaFileAlt />
+                  <Link href={'/resume'}>
+                    <span className="font-bold cursor-pointer">Resume</span>
+                  </Link>
+                </li>
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                  <FaEnvelopeOpenText />
+                  <Link href={'/contact'}>
+                    <span className="font-bold cursor-pointer">Contact</span>
+                  </Link>
+                </li>
+              </ul>
+              {/* Hire me btn */}
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-stack-dark rounded shadow hover:bg-stack-extra-dark">
+                <FaPaperPlane />
+                <span className="font-bold">Hire Me</span>
+              </button>
+              {/* Divider */}
+              <hr className="my-4 w-full border-gray-300" />
+            </section>
+
+            {/* Misc. section */}
+          </nav>
+        </div>
+        {/* Flex container end */}
+      </aside>
+      {/* Sidebar container end */}
+
+      {/* Main container */}
+      <main className="h-screen overflow-auto bg-pearl-blush">{children}</main>
+    </div>
+  )
+}
+
+export default RootLayout
