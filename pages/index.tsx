@@ -1,183 +1,176 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaFileAlt, FaChartBar, FaLaptopCode, FaEye } from 'react-icons/fa'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et
-      ullamcorper mi, ut interdum arcu. Mauris quis sodales purus. In in ipsum
-      ultricies sapien maximus blandit. Ut non enim justo. Maecenas justo dolor,
-      facilisis mollis rutrum id, efficitur at augue. Etiam tempor, est quis
-      ornare vehicula, felis turpis dapibus massa, quis porttitor ex odio at
-      erat. Suspendisse non risus vel nisi sodales efficitur. Vestibulum
-      consequat gravida molestie. Nam tortor leo, ultricies vel ultricies
-      finibus, sagittis at diam. Maecenas vitae arcu sed lectus fermentum
-      scelerisque et et diam. Maecenas dictum rhoncus ex, scelerisque mollis
-      orci. Fusce pharetra turpis eget nisl vehicula sollicitudin. Etiam at
-      gravida ipsum, nec pretium ipsum. Proin blandit vel orci nec cursus. In
-      dolor lacus, congue ac efficitur nec, volutpat ut erat. Nulla eu nulla et
-      ex aliquet efficitur. Sed eget turpis quis tortor varius auctor sed eu
-      tellus. Proin consequat enim id nisi sodales vulputate. Vestibulum iaculis
-      metus id diam venenatis mattis. Aenean egestas dapibus nisi, ullamcorper
-      volutpat libero. Quisque tristique nunc orci. Aenean porta fringilla
-      sagittis. Proin a lacus commodo, laoreet orci vel, aliquet orci. Sed
-      mauris orci, condimentum in sem id, molestie vehicula arcu. Ut varius
-      purus vitae ex posuere ullamcorper. Nulla dapibus augue in tortor auctor
-      efficitur. Duis tristique in urna imperdiet tristique. Vestibulum vitae
-      sem ut ligula iaculis ultrices et at nibh. Morbi eleifend, urna non
-      pulvinar porta, sem odio mattis massa, ut congue ex eros in mi. Nam
-      gravida, lacus vitae fringilla ultricies, nisi nulla ultrices urna, et
-      mattis nisi sapien eget ante. Sed non aliquam metus. Integer ut ligula ac
-      ipsum rhoncus iaculis. Vivamus nisl nibh, dictum sit amet nisl eget,
-      gravida aliquam felis. Phasellus cursus augue commodo nunc aliquet
-      efficitur. Vestibulum tristique lectus non neque bibendum, eget interdum
-      enim imperdiet. Maecenas sed ligula a velit viverra hendrerit. In
-      hendrerit lorem velit, fringilla iaculis nulla feugiat sit amet. Vivamus
-      nec laoreet elit. Vivamus molestie massa sit amet pretium tempor. Aenean
-      in odio elementum risus iaculis malesuada id ac odio. Sed aliquam luctus
-      purus et feugiat. Maecenas in magna mattis, pellentesque orci et,
-      ultricies eros. Aenean vitae nibh blandit urna suscipit commodo. Mauris
-      sollicitudin non orci ac venenatis. Nulla laoreet tempus elit ac
-      sollicitudin. Maecenas pellentesque nibh eget diam faucibus dignissim.
-      Proin quis nibh id felis volutpat lacinia sit amet quis lorem. Maecenas
-      dictum odio et erat tempus vestibulum. In hac habitasse platea dictumst.
-      Nullam laoreet eget urna luctus gravida. Nam in malesuada urna.
-      Suspendisse vitae lectus non felis ornare eleifend malesuada at mi. In
-      commodo bibendum fermentum. Aliquam quis magna leo. Proin a arcu vel nulla
-      congue elementum fermentum vel sapien. Nam rutrum posuere massa sed
-      mattis. Fusce magna tellus, accumsan ac commodo id, euismod eget risus. In
-      pulvinar sed turpis quis tincidunt. Donec placerat tempus lectus.
-      Suspendisse rhoncus consequat odio, non convallis dui porta id. Aenean
-      pellentesque elementum ultrices. Vivamus facilisis gravida lacus sed
-      congue. Curabitur venenatis pretium augue. Sed eu purus interdum,
-      fringilla velit eget, aliquet orci. In in nisi sagittis, varius quam vel,
-      blandit orci. Donec vitae ex at eros varius interdum id quis lorem. Proin
-      et aliquet augue, sit amet sagittis nisi. Mauris semper maximus nibh, eget
-      pulvinar nibh aliquam id. Class aptent taciti sociosqu ad litora torquent
-      per conubia nostra, per inceptos himenaeos. Quisque eget viverra lacus.
-      Donec vehicula molestie fringilla. Pellentesque ullamcorper, metus a
-      mattis dictum, augue lectus suscipit orci, ut finibus leo felis sit amet
-      arcu. Donec ipsum lectus, faucibus sed risus at, porttitor accumsan nulla.
-      Donec felis turpis, porttitor in urna sed, sollicitudin condimentum dolor.
-      Ut lobortis, sapien eu tempus congue, dui mi tempus dolor, eget accumsan
-      libero diam id sapien. Nulla facilisi. Proin ac nunc pretium, finibus
-      massa eu, sodales dolor. Aliquam erat volutpat. Integer vel enim dui. Cras
-      facilisis, dolor vel volutpat pharetra, mauris mi sollicitudin elit, non
-      laoreet leo mauris tincidunt tellus. Morbi ultrices tristique elit sed
-      malesuada. Sed leo purus, euismod vel tortor ut, efficitur pellentesque
-      purus. Orci varius natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Fusce aliquet est nec rhoncus dignissim. Nullam
-      vehicula posuere eros eget pulvinar. Etiam at ante mi. Nullam nec mollis
-      purus, at porttitor odio. Maecenas tristique, neque a luctus ultrices,
-      dolor nisi elementum enim, quis vulputate ex arcu id odio. Ut in nunc
-      fermentum, feugiat massa at, mollis risus. Sed congue, lectus id malesuada
-      consectetur, eros dui aliquam neque, in vehicula libero est sit amet enim.
-      Duis eget leo rhoncus, euismod odio vel, accumsan eros. Maecenas porta
-      urna enim, et sollicitudin justo venenatis congue. Donec facilisis mi
-      vitae leo iaculis tincidunt sed vestibulum orci. Nam a ligula maximus,
-      laoreet libero ut, consequat velit. Sed posuere efficitur turpis tincidunt
-      dictum. In scelerisque malesuada nunc, quis tempor arcu dapibus id.
-      Phasellus vitae tortor ac orci blandit dapibus sit amet in erat. Morbi
-      rhoncus fermentum nunc in molestie. Integer nibh massa, mollis sit amet
-      sapien ut, rhoncus pulvinar leo. Nullam et efficitur libero. Curabitur
-      hendrerit ac urna sit amet sodales. Fusce accumsan augue pretium libero
-      fermentum dapibus. Phasellus sollicitudin dui sed augue euismod feugiat.
-      Etiam non tempus velit, at sodales dui. Praesent nibh quam, vestibulum et
-      commodo sed, rutrum quis magna. Duis elementum consequat dolor, ac cursus
-      massa dapibus quis. Mauris congue dignissim ante, non ultricies velit
-      gravida ut. Vestibulum consequat, ligula vitae mollis cursus, nisi libero
-      porta nibh, id porttitor sapien nisi nec augue. Nunc a mi eros. Mauris
-      nisi ante, fringilla id nisl id, sollicitudin posuere enim. Aliquam semper
-      sollicitudin nisi at egestas. Duis elementum est rutrum orci vehicula, et
-      sagittis nisi sagittis. Aliquam sed aliquam nisi. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ullamcorper mi, ut
-      interdum arcu. Mauris quis sodales purus. In in ipsum ultricies sapien
-      maximus blandit. Ut non enim justo. Maecenas justo dolor, facilisis mollis
-      rutrum id, efficitur at augue. Etiam tempor, est quis ornare vehicula,
-      felis turpis dapibus massa, quis porttitor ex odio at erat. Suspendisse
-      non risus vel nisi sodales efficitur. Vestibulum consequat gravida
-      molestie. Nam tortor leo, ultricies vel ultricies finibus, sagittis at
-      diam. Maecenas vitae arcu sed lectus fermentum scelerisque et et diam.
-      Maecenas dictum rhoncus ex, scelerisque mollis orci. Fusce pharetra turpis
-      eget nisl vehicula sollicitudin. Etiam at gravida ipsum, nec pretium
-      ipsum. Proin blandit vel orci nec cursus. In dolor lacus, congue ac
-      efficitur nec, volutpat ut erat. Nulla eu nulla et ex aliquet efficitur.
-      Sed eget turpis quis tortor varius auctor sed eu tellus. Proin consequat
-      enim id nisi sodales vulputate. Vestibulum iaculis metus id diam venenatis
-      mattis. Aenean egestas dapibus nisi, ullamcorper volutpat libero. Quisque
-      tristique nunc orci. Aenean porta fringilla sagittis. Proin a lacus
-      commodo, laoreet orci vel, aliquet orci. Sed mauris orci, condimentum in
-      sem id, molestie vehicula arcu. Ut varius purus vitae ex posuere
-      ullamcorper. Nulla dapibus augue in tortor auctor efficitur. Duis
-      tristique in urna imperdiet tristique. Vestibulum vitae sem ut ligula
-      iaculis ultrices et at nibh. Morbi eleifend, urna non pulvinar porta, sem
-      odio mattis massa, ut congue ex eros in mi. Nam gravida, lacus vitae
-      fringilla ultricies, nisi nulla ultrices urna, et mattis nisi sapien eget
-      ante. Sed non aliquam metus. Integer ut ligula ac ipsum rhoncus iaculis.
-      Vivamus nisl nibh, dictum sit amet nisl eget, gravida aliquam felis.
-      Phasellus cursus augue commodo nunc aliquet efficitur. Vestibulum
-      tristique lectus non neque bibendum, eget interdum enim imperdiet.
-      Maecenas sed ligula a velit viverra hendrerit. In hendrerit lorem velit,
-      fringilla iaculis nulla feugiat sit amet. Vivamus nec laoreet elit.
-      Vivamus molestie massa sit amet pretium tempor. Aenean in odio elementum
-      risus iaculis malesuada id ac odio. Sed aliquam luctus purus et feugiat.
-      Maecenas in magna mattis, pellentesque orci et, ultricies eros. Aenean
-      vitae nibh blandit urna suscipit commodo. Mauris sollicitudin non orci ac
-      venenatis. Nulla laoreet tempus elit ac sollicitudin. Maecenas
-      pellentesque nibh eget diam faucibus dignissim. Proin quis nibh id felis
-      volutpat lacinia sit amet quis lorem. Maecenas dictum odio et erat tempus
-      vestibulum. In hac habitasse platea dictumst. Nullam laoreet eget urna
-      luctus gravida. Nam in malesuada urna. Suspendisse vitae lectus non felis
-      ornare eleifend malesuada at mi. In commodo bibendum fermentum. Aliquam
-      quis magna leo. Proin a arcu vel nulla congue elementum fermentum vel
-      sapien. Nam rutrum posuere massa sed mattis. Fusce magna tellus, accumsan
-      ac commodo id, euismod eget risus. In pulvinar sed turpis quis tincidunt.
-      Donec placerat tempus lectus. Suspendisse rhoncus consequat odio, non
-      convallis dui porta id. Aenean pellentesque elementum ultrices. Vivamus
-      facilisis gravida lacus sed congue. Curabitur venenatis pretium augue. Sed
-      eu purus interdum, fringilla velit eget, aliquet orci. In in nisi
-      sagittis, varius quam vel, blandit orci. Donec vitae ex at eros varius
-      interdum id quis lorem. Proin et aliquet augue, sit amet sagittis nisi.
-      Mauris semper maximus nibh, eget pulvinar nibh aliquam id. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-      himenaeos. Quisque eget viverra lacus. Donec vehicula molestie fringilla.
-      Pellentesque ullamcorper, metus a mattis dictum, augue lectus suscipit
-      orci, ut finibus leo felis sit amet arcu. Donec ipsum lectus, faucibus sed
-      risus at, porttitor accumsan nulla. Donec felis turpis, porttitor in urna
-      sed, sollicitudin condimentum dolor. Ut lobortis, sapien eu tempus congue,
-      dui mi tempus dolor, eget accumsan libero diam id sapien. Nulla facilisi.
-      Proin ac nunc pretium, finibus massa eu, sodales dolor. Aliquam erat
-      volutpat. Integer vel enim dui. Cras facilisis, dolor vel volutpat
-      pharetra, mauris mi sollicitudin elit, non laoreet leo mauris tincidunt
-      tellus. Morbi ultrices tristique elit sed malesuada. Sed leo purus,
-      euismod vel tortor ut, efficitur pellentesque purus. Orci varius natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce
-      aliquet est nec rhoncus dignissim. Nullam vehicula posuere eros eget
-      pulvinar. Etiam at ante mi. Nullam nec mollis purus, at porttitor odio.
-      Maecenas tristique, neque a luctus ultrices, dolor nisi elementum enim,
-      quis vulputate ex arcu id odio. Ut in nunc fermentum, feugiat massa at,
-      mollis risus. Sed congue, lectus id malesuada consectetur, eros dui
-      aliquam neque, in vehicula libero est sit amet enim. Duis eget leo
-      rhoncus, euismod odio vel, accumsan eros. Maecenas porta urna enim, et
-      sollicitudin justo venenatis congue. Donec facilisis mi vitae leo iaculis
-      tincidunt sed vestibulum orci. Nam a ligula maximus, laoreet libero ut,
-      consequat velit. Sed posuere efficitur turpis tincidunt dictum. In
-      scelerisque malesuada nunc, quis tempor arcu dapibus id. Phasellus vitae
-      tortor ac orci blandit dapibus sit amet in erat. Morbi rhoncus fermentum
-      nunc in molestie. Integer nibh massa, mollis sit amet sapien ut, rhoncus
-      pulvinar leo. Nullam et efficitur libero. Curabitur hendrerit ac urna sit
-      amet sodales. Fusce accumsan augue pretium libero fermentum dapibus.
-      Phasellus sollicitudin dui sed augue euismod feugiat. Etiam non tempus
-      velit, at sodales dui. Praesent nibh quam, vestibulum et commodo sed,
-      rutrum quis magna. Duis elementum consequat dolor, ac cursus massa dapibus
-      quis. Mauris congue dignissim ante, non ultricies velit gravida ut.
-      Vestibulum consequat, ligula vitae mollis cursus, nisi libero porta nibh,
-      id porttitor sapien nisi nec augue. Nunc a mi eros. Mauris nisi ante,
-      fringilla id nisl id, sollicitudin posuere enim. Aliquam semper
-      sollicitudin nisi at egestas. Duis elementum est rutrum orci vehicula, et
-      sagittis nisi sagittis. Aliquam sed aliquam nisi.
-    </div>
+    <>
+      {/* About Me section */}
+      <section className="p-4 lg:p-12 bg-pearl-bush-600">
+        <div className="container mx-auto">
+          <h2 className="text-5xl font-bold mb-1">Arunangshu Biswas</h2>
+          <h3 className="font-extralight text-2xl mb-3">Software Engineer</h3>
+          <p className="mb-6">
+            I&apos;m a self-taught, passionate software engineer specalized in
+            developing scalable backend solutions. I hail from{' '}
+            <a
+              className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700"
+              href="https://www.google.com/maps/place/India/@20.7509337,73.7370457,5z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288"
+            >
+              India
+            </a>{' '}
+            and currentlly working at{' '}
+            <a
+              className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700"
+              href="https://www.crio.do/"
+            >
+              Crio.Do
+            </a>{' '}
+            as a backend engineer. From time to time I also dabble in frontend
+            development as well. Want to know how I may help your organization?
+            Check out my project{' '}
+            <Link href={'/portfolio'}>
+              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+                portfolio
+              </span>
+            </Link>{' '}
+            and online{' '}
+            <Link href={'/resume'}>
+              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+                resume
+              </span>
+            </Link>
+            .
+          </p>
+          <div className="flex space-x-4">
+            <Link href={'/portfolio'}>
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-stack rounded shadow hover:bg-stack-700">
+                <FaLaptopCode />
+                <span className="font-bold">View Portfolio</span>
+              </button>
+            </Link>
+            <Link href={'/resume'}>
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-twine rounded shadow hover:bg-twine-700">
+                <FaFileAlt />
+                <span className="font-bold">View Resume</span>
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* About Me section end */}
+
+      {/* What I do section */}
+      <section className="p-4 lg:p-12">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold border-l-8 border-stack pl-4 mb-4">
+            My Skills
+          </h2>
+
+          <p className="mb-12">
+            Over the past 5-6 years I have worked on different types of
+            projects, contributed to open-source and on top of that I have 1+
+            years of work experience. Below is a quick overview of my main
+            technical skill sets and technologies I use. Want to find out more
+            about my experience? Check out my online{' '}
+            <Link href={'/resume'}>
+              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+                resume
+              </span>
+            </Link>{' '}
+            and project{' '}
+            <Link href={'/portfolio'}>
+              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+                portfolio
+              </span>
+            </Link>
+            .
+          </p>
+
+          {/* Skill items */}
+          <div className="mb-16 grid gap-x-4 gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {Array.from(Array(8).keys()).map((i) => (
+              <div className="flex flex-col" key={i}>
+                <div className="flex py-2">
+                  <Image
+                    src={'/personal-website/html.png'}
+                    alt="html"
+                    width={'32px'}
+                    height={'32px'}
+                  />
+                  <Image
+                    src={'/personal-website/css.png'}
+                    alt="css"
+                    width={'32px'}
+                    height={'32px'}
+                  />
+                  <Image
+                    src={'/personal-website/javascript.png'}
+                    alt="javascript"
+                    width={'32px'}
+                    height={'32px'}
+                  />
+                </div>
+                <h3 className="font-bold mb-2">Vanilla HTML/CSS/JS</h3>
+                <p>
+                  Proficient with the basics of HTML, CSS and JS which are the
+                  fundamental building blocks for all websites and frontend
+                  libraries.
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* View more btn */}
+          <Link href={'/skills'}>
+            <button className="flex items-center space-x-2 my-4 px-4 py-1.5 mx-auto text-white bg-stack rounded shadow hover:bg-stack-700">
+              <FaChartBar />
+              <span className="font-bold">View More</span>
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Featured projects */}
+      <section className="p-4 text-white bg-cape-cod lg:p-12">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold border-l-8 border-stack pl-4 mb-12">
+            Featured Projects
+          </h2>
+
+          {/* Project cards */}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {Array.from(Array(4).keys()).map((i) => (
+              <div key={i} className="mt-4 rounded bg-pearl-bush text-gray-800">
+                <div className="relative w-11/12 aspect-square mx-auto -mt-4 drop-shadow-xl rounded overflow-hidden">
+                  <Image
+                    src={'/personal-website/pocketdict.webp'}
+                    alt="Project thumbnail"
+                    layout="fill"
+                    objectFit="cover"
+                    className="shadow-lg"
+                  />
+
+                  {/* Image overlay */}
+                  <div className="absolute flex items-center justify-center top-0 left-0 w-full h-full opacity-0 backdrop-blur-sm backdrop-brightness-50 hover:opacity-100">
+                    <button className="flex items-center space-x-2 mb-2 mt-4 px-8 py-3 text-white bg-gray-700 rounded shadow hover:bg-gray-600">
+                      <FaEye />
+                      <span className="font-bold">View case-study</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="p-4">
+                  <h5 className="text-lg font-bold">Project Heading</h5>
+                  <p>Project description. Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

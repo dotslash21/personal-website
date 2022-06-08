@@ -14,16 +14,110 @@ module.exports = {
     extend: {
       colors: {
         // Credits: http://colormind.io/
-        'pearl-blush': '#EBE2DB', // background
-        twine: '#BD8A52', // light-accent
-        stack: '#8B978C', // main brand color
-        'stack-dark': '#545E55', // main brand color dark version
-        'stack-extra-dark': '#3c433d', // main brand color extra dark version
-        'roman-coffee': '#775A50', // dark accent
-        'cape-cod': '#36443D', // dark shades
-        'aqua-forest': '#5FA862', // Success
-        'golden-grass': '#DC982A', // Warning
-        pomegranate: '#F44336', // Danger
+        'pearl-bush': {
+          DEFAULT: '#EBE2DB',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#FFFFFF',
+          300: '#FFFFFF',
+          400: '#FAF7F5',
+          500: '#EBE2DB',
+          600: '#D7C5B7',
+          700: '#C3A893',
+          800: '#AF8B6F',
+          900: '#946F52',
+        }, // background
+        twine: {
+          DEFAULT: '#BD8A52',
+          50: '#F0E4D7',
+          100: '#EADAC8',
+          200: '#DFC6AB',
+          300: '#D4B28D',
+          400: '#C89E70',
+          500: '#BD8A52',
+          600: '#9C6E3B',
+          700: '#73512C',
+          800: '#4A341C',
+          900: '#22180D',
+        }, // light-accent
+        stack: {
+          DEFAULT: '#8B978C',
+          50: '#ECEEEC',
+          100: '#E1E4E1',
+          200: '#CCD1CC',
+          300: '#B6BEB7',
+          400: '#A1AAA1',
+          500: '#8B978C',
+          600: '#6F7B70',
+          700: '#545E55',
+          800: '#3A403A',
+          900: '#1F231F',
+        }, // main brand color
+        'roman-coffee': {
+          DEFAULT: '#775A50',
+          50: '#CCB9B3',
+          100: '#C4AEA7',
+          200: '#B3988E',
+          300: '#A38176',
+          400: '#8F6C60',
+          500: '#775A50',
+          600: '#554139',
+          700: '#342723',
+          800: '#120E0C',
+          900: '#000000',
+        }, // dark accent
+        'cape-cod': {
+          DEFAULT: '#36443D',
+          50: '#8DA599',
+          100: '#829B8F',
+          200: '#6C887A',
+          300: '#5A7166',
+          400: '#485B51',
+          500: '#36443D',
+          600: '#1D2521',
+          700: '#040505',
+          800: '#000000',
+          900: '#000000',
+        }, // dark shades
+        'aqua-forest': {
+          DEFAULT: '#5FA862',
+          50: '#D6E9D7',
+          100: '#C9E1CA',
+          200: '#AED3B0',
+          300: '#94C596',
+          400: '#79B67C',
+          500: '#5FA862',
+          600: '#49864B',
+          700: '#356237',
+          800: '#213D23',
+          900: '#0E190E',
+        }, // Success
+        'golden-grass': {
+          DEFAULT: '#DC982A',
+          50: '#F6E4C8',
+          100: '#F3DCB6',
+          200: '#EDCB93',
+          300: '#E8BA70',
+          400: '#E2A94D',
+          500: '#DC982A',
+          600: '#B1781D',
+          700: '#815815',
+          800: '#50370D',
+          900: '#201605',
+        }, // Warning
+        pomegranate: {
+          DEFAULT: '#F44336',
+          50: '#FEE6E4',
+          100: '#FCD4D1',
+          200: '#FAB0AA',
+          300: '#F88B83',
+          400: '#F6675D',
+          500: '#F44336',
+          600: '#E51B0D',
+          700: '#B0150A',
+          800: '#7B0F07',
+          900: '#460804',
+        }, // Danger
       },
     },
   },

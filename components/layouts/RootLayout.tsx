@@ -22,7 +22,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <div className="flex flex-col lg:flex-row">
       {/* Sidebar container */}
-      <aside className="w-screen flex-shrink-0 bg-stack lg:w-72 lg:h-screen">
+      <aside className="w-screen bg-stack flex-shrink-0 lg:basis-72 lg:h-screen">
         {/* Flex container */}
         <div className="flex flex-col justify-start">
           {/* Name */}
@@ -58,35 +58,35 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                  <FaGithub className="w-8 h-8 cursor-pointer hover:text-stack-700" />
                 </a>
                 <a
                   href={'https://www.facebook.com/itsmearunangshu/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                  <FaLinkedin className="w-8 h-8 cursor-pointer hover:text-stack-700" />
                 </a>
                 <a
                   href={'https://twitter.com/arunangshubsws'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                  <FaTwitter className="w-8 h-8 cursor-pointer hover:text-stack-700" />
                 </a>
                 <a
                   href={'https://www.facebook.com/itsmearunangshu/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                  <FaFacebook className="w-8 h-8 cursor-pointer hover:text-stack-700" />
                 </a>
                 <a
                   href={'mailto:arunangshubsws@gmail.com'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaEnvelope className="w-8 h-8 cursor-pointer hover:text-stack-dark" />
+                  <FaEnvelope className="w-8 h-8 cursor-pointer hover:text-stack-700" />
                 </a>
               </div>
               {/* Divider */}
@@ -96,31 +96,31 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             {/* Page navigation section */}
             <section className="flex flex-col items-center justify-start w-full">
               <ul className="flex flex-col w-48 text-white">
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaUser />
                   <Link href={'/'}>
                     <span className="font-bold cursor-pointer">About Me</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaLaptopCode />
                   <Link href={'/portfolio'}>
                     <span className="font-bold cursor-pointer">Portfolio</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaChartBar />
                   <Link href={'/skills'}>
                     <span className="font-bold cursor-pointer">Skills</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaFileAlt />
                   <Link href={'/resume'}>
                     <span className="font-bold cursor-pointer">Resume</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-dark">
+                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaEnvelopeOpenText />
                   <Link href={'/contact'}>
                     <span className="font-bold cursor-pointer">Contact</span>
@@ -128,7 +128,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                 </li>
               </ul>
               {/* Hire me btn */}
-              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-stack-dark rounded shadow hover:bg-stack-extra-dark">
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-twine rounded shadow hover:bg-twine-700">
                 <FaPaperPlane />
                 <span className="font-bold">Hire Me</span>
               </button>
@@ -144,7 +144,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       {/* Sidebar container end */}
 
       {/* Main container */}
-      <main className="h-screen overflow-auto bg-pearl-blush">{children}</main>
+      <main className="h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
+        {children}
+      </main>
     </div>
   )
 }
