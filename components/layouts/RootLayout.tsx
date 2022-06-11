@@ -7,6 +7,7 @@ import {
   FaFacebook,
   FaFileAlt,
   FaGithub,
+  FaHeart,
   FaLaptopCode,
   FaLinkedin,
   FaPaperPlane,
@@ -144,9 +145,28 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       {/* Sidebar container end */}
 
       {/* Main container */}
-      <main className="h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
-        {children}
-      </main>
+      <div className="h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
+        <main>{children}</main>
+
+        <footer className="flex items-center justify-center py-8 text-white bg-cape-cod-400">
+          <p>
+            Made with <FaHeart className="text-red-500 inline-block" /> and{' '}
+            <a
+              href="https://nextjs.org/"
+              className="text-stack-300 hover:text-slate-200 hover:underline"
+            >
+              Next.js
+            </a>{' '}
+            by{' '}
+            <a
+              className="text-stack-300 hover:text-slate-200 hover:underline"
+              href="https://github.com/dotslash21"
+            >
+              Arunangshu Biswas
+            </a>
+          </p>
+        </footer>
+      </div>
     </div>
   )
 }
