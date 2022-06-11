@@ -145,10 +145,10 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       {/* Sidebar container end */}
 
       {/* Main container */}
-      <div className="h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
+      <div className="flex flex-col h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
         <main>{children}</main>
 
-        <footer className="flex items-center justify-center py-8 text-white bg-cape-cod-400">
+        <footer className="flex items-center justify-center mt-auto py-8 text-white bg-cape-cod-400">
           <p>
             Made with <FaHeart className="text-red-500 inline-block" /> and{' '}
             <a
