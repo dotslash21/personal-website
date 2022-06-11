@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaFileAlt, FaChartBar, FaLaptopCode, FaEye } from 'react-icons/fa'
+import SkillIcon from '../components/SkillIcon'
+import Skill from '../constants/skill'
 
 const Home: NextPage = () => {
   return (
@@ -92,25 +94,10 @@ const Home: NextPage = () => {
           <div className="mb-16 grid gap-x-4 gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {Array.from(Array(8).keys()).map((i) => (
               <div className="flex flex-col" key={i}>
-                <div className="flex py-2">
-                  <Image
-                    src={'/personal-website/html.png'}
-                    alt="html"
-                    width={'32px'}
-                    height={'32px'}
-                  />
-                  <Image
-                    src={'/personal-website/css.png'}
-                    alt="css"
-                    width={'32px'}
-                    height={'32px'}
-                  />
-                  <Image
-                    src={'/personal-website/javascript.png'}
-                    alt="javascript"
-                    width={'32px'}
-                    height={'32px'}
-                  />
+                <div className="flex py-2 gap-1">
+                  <SkillIcon skill={Skill.HTML} />
+                  <SkillIcon skill={Skill.CSS} />
+                  <SkillIcon skill={Skill.JAVASCRIPT} />
                 </div>
                 <h3 className="font-bold mb-2">Vanilla HTML/CSS/JS</h3>
                 <p>

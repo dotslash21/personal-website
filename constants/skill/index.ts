@@ -1,0 +1,16 @@
+enum Skill {
+  HTML = 'HTML',
+  CSS = 'CSS',
+  JAVASCRIPT = 'JAVASCRIPT',
+  REACT = 'REACT',
+  REDUX = 'REDUX',
+  NEXTJS = 'NEXTJS',
+  NODE = 'NODE',
+  EXPRESS = 'EXPRESS',
+  MONGODB = 'MONGODB',
+  MYSQL = 'MYSQL',
+  POSTGRES = 'POSTGRES',
+  SPRING_BOOT = 'SPRING_BOOT',
+}
+
+export default Skill
