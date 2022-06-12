@@ -110,12 +110,6 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                   </Link>
                 </li>
                 <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
-                  <FaChartBar />
-                  <Link href={'/skills'}>
-                    <span className="font-bold cursor-pointer">Skills</span>
-                  </Link>
-                </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
                   <FaFileAlt />
                   <Link href={'/resume'}>
                     <span className="font-bold cursor-pointer">Resume</span>
