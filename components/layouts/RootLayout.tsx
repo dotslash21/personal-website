@@ -129,7 +129,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                 </li>
               </ul>
               {/* Hire me btn */}
-              <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-twine rounded shadow hover:bg-twine-700">
+              <button className="flex items-center space-x-2 mb-2 mt-8 px-6 py-2.5 text-stack bg-white rounded shadow hover:bg-stack-700">
                 <FaPaperPlane />
                 <span className="font-bold">Hire Me</span>
               </button>
