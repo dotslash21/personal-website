@@ -21,7 +21,7 @@ type RootLayoutProps = {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col h-screen lg:flex-row lg:h-fit">
       {/* Sidebar container */}
       <aside className="w-screen bg-stack flex-shrink-0 lg:basis-72 lg:h-screen">
         {/* Flex container */}
@@ -139,7 +139,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       {/* Sidebar container end */}
 
       {/* Main container */}
-      <div className="flex flex-col h-screen basis-full overflow-auto text-gray-800 bg-pearl-bush">
+      <div className="flex flex-col basis-full overflow-auto text-gray-800 bg-pearl-bush lg:h-screen">
         <main>{children}</main>
 
         <footer className="flex items-center justify-center mt-auto py-8 text-white bg-cape-cod-400">
