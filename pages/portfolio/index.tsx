@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { FaEye, FaPaperPlane } from 'react-icons/fa'
+import ProjectCard from '../../components/ProjectCard'
 
 const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
   const [selected, setSelected] = useState<string>('all')
@@ -93,33 +94,12 @@ const Portfolio: NextPage = () => {
         {/* Project cards */}
         <div className="grid grid-cols-1 gap-4 mt-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {Array.from(Array(4).keys()).map((i) => (
-            <div
+            <ProjectCard
+              imageSrc={'/personal-website/pocketdict.webp'}
+              title={'Project Heading'}
+              description={'Project description. Lorem ipsum dolor sit amet.'}
               key={i}
-              className="mt-4 rounded bg-hint-of-red text-gray-800 shadow-lg"
-            >
-              <div className="relative w-11/12 aspect-square mx-auto -mt-4 drop-shadow-xl rounded overflow-hidden">
-                <Image
-                  src={'/personal-website/pocketdict.webp'}
-                  alt="Project thumbnail"
-                  layout="fill"
-                  objectFit="cover"
-                  className="shadow-lg"
-                />
-
-                {/* Image overlay */}
-                <div className="absolute flex items-center justify-center top-0 left-0 w-full h-full opacity-0 backdrop-blur-sm backdrop-brightness-50 hover:opacity-100">
-                  <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-2 text-white bg-gray-700 rounded shadow hover:bg-gray-600">
-                    <FaEye />
-                    <span className="font-bold">View case-study</span>
-                  </button>
-                </div>
-              </div>
-
-              <div className="p-4">
-                <h5 className="text-lg font-bold">Project Heading</h5>
-                <p>Project description. Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
+            />
           ))}
         </div>
       </section>
