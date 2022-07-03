@@ -12,7 +12,7 @@ const Contact: NextPage = () => {
   return (
     <>
       {/* Heading section */}
-      <section className="p-4 lg:p-12 bg-pearl-bush-600">
+      <section className="p-4 lg:p-12 bg-hint-of-red-600">
         <div className="flex flex-col items-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-2">Contact</h2>
           <p className="text-center mb-4">
@@ -20,7 +20,7 @@ const Contact: NextPage = () => {
             shoot an email to{' '}
             <a
               href="mailto:arunangshubsws@gmail.com"
-              className="text-stack hover:underline hover:text-stack-600"
+              className="text-havelock-blue hover:underline hover:text-havelock-blue-600"
             >
               arunangshubsws@gmail.com
             </a>
@@ -30,16 +30,16 @@ const Contact: NextPage = () => {
           </p>
           <div className="flex gap-6">
             <a href="https://twitter.com/arunangshubsws">
-              <FaTwitter className="w-6 h-6 text-stack hover:text-stack-600" />
+              <FaTwitter className="w-6 h-6 text-havelock-blue hover:text-havelock-blue-600" />
             </a>
             <a href="https://www.linkedin.com/in/arunangshubsws/">
-              <FaLinkedin className="w-6 h-6 text-stack hover:text-stack-600" />
+              <FaLinkedin className="w-6 h-6 text-havelock-blue hover:text-havelock-blue-600" />
             </a>
             <a href="https://www.linkedin.com/in/arunangshubsws/">
-              <FaFacebook className="w-6 h-6 text-stack hover:text-stack-600" />
+              <FaFacebook className="w-6 h-6 text-havelock-blue hover:text-havelock-blue-600" />
             </a>
             <a href="https://github.com/dotslash21s">
-              <FaGithub className="w-6 h-6 text-stack hover:text-stack-600" />
+              <FaGithub className="w-6 h-6 text-havelock-blue hover:text-havelock-blue-600" />
             </a>
           </div>
         </div>
@@ -56,23 +56,23 @@ const Contact: NextPage = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="px-3 py-3.5 rounded-md w-full bg-pearl-bush-400 border border-stack focus:shadow-md focus:shadow-stack"
+                className="px-3 py-3.5 rounded-md w-full bg-hint-of-red-400 border border-havelock-blue focus:shadow-md focus:shadow-havelock-blue"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="px-3 py-3.5 rounded-md w-full bg-pearl-bush-400 border border-stack focus:shadow-md focus:shadow-stack"
+                className="px-3 py-3.5 rounded-md w-full bg-hint-of-red-400 border border-havelock-blue focus:shadow-md focus:shadow-havelock-blue"
               />
             </div>
             <textarea
               name="message"
               rows={10}
               placeholder="Enter your message"
-              className="px-3 py-3.5 rounded-md w-3/4 bg-pearl-bush-400 border border-stack focus:shadow-md focus:shadow-stack"
+              className="px-3 py-3.5 rounded-md w-3/4 bg-hint-of-red-400 border border-havelock-blue focus:shadow-md focus:shadow-havelock-blue"
             ></textarea>
             <button
               type="submit"
-              className="px-4 py-2 rounded-md bg-stack text-white flex items-center gap-2 hover:bg-stack-600"
+              className="px-4 py-2 rounded-md bg-havelock-blue text-white flex items-center gap-2 hover:bg-havelock-blue-600"
             >
               <FaPaperPlane />
               <span className="font-bold text-lg">Send</span>

@@ -14,10 +14,10 @@ const Resume: NextPage = () => {
   return (
     <>
       {/* Heading section */}
-      <section className="p-4 lg:p-12 bg-pearl-bush-600">
+      <section className="p-4 lg:p-12 bg-hint-of-red-600">
         <div className="flex flex-col items-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold">Resume</h2>
-          <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-stack rounded shadow hover:bg-stack-700">
+          <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-havelock-blue rounded shadow hover:bg-havelock-blue-700">
             <FaFilePdf />
             <span className="font-bold">Download PDF version</span>
           </button>
@@ -31,7 +31,7 @@ const Resume: NextPage = () => {
           {/* Resume header */}
           <div className="flex justify-between items-center">
             <div className="flex flex-col justify-start">
-              <h2 className="text-5xl font-bold text-stack">
+              <h2 className="text-5xl font-bold text-havelock-blue">
                 ARUNANGSHU BISWAS
               </h2>
               <p className="text-xl py-1">Software Engineer</p>
@@ -64,7 +64,7 @@ const Resume: NextPage = () => {
             <div className="flex flex-col justify-start basis-full pl-3 pr-12">
               {/* Work experience section */}
               <div className="my-4">
-                <h3 className="text-lg text-stack font-bold border-l-8 border-stack pl-4 mb-6">
+                <h3 className="text-lg text-havelock-blue font-bold border-l-8 border-havelock-blue pl-4 mb-6">
                   WORK EXPERIENCES
                 </h3>
                 {/* Items */}
@@ -97,7 +97,7 @@ const Resume: NextPage = () => {
 
               {/* Projects section */}
               <div className="my-4">
-                <h3 className="text-lg text-stack font-bold border-l-8 border-stack pl-4 mb-6">
+                <h3 className="text-lg text-havelock-blue font-bold border-l-8 border-havelock-blue pl-4 mb-6">
                   PROJECTS
                 </h3>
                 {/* Items */}
@@ -123,7 +123,7 @@ const Resume: NextPage = () => {
             <div className="px-6 pb-6 border-l border-gray-400">
               {/* Skills section */}
               <div className="py-4">
-                <h3 className="text-lg text-stack font-bold border-l-8 border-stack pl-4 mb-6">
+                <h3 className="text-lg text-havelock-blue font-bold border-l-8 border-havelock-blue pl-4 mb-6">
                   SKILLS
                 </h3>
                 <h4 className="font-bold">Technical</h4>
@@ -145,7 +145,7 @@ const Resume: NextPage = () => {
 
               {/* Education section */}
               <div className="py-4">
-                <h3 className="text-lg text-stack font-bold border-l-8 border-stack pl-4 mb-6">
+                <h3 className="text-lg text-havelock-blue font-bold border-l-8 border-havelock-blue pl-4 mb-6">
                   EDUCATION
                 </h3>
                 {Array.from(Array(2).keys()).map((i) => (
@@ -163,7 +163,7 @@ const Resume: NextPage = () => {
 
               {/* Language section */}
               <div className="py-4">
-                <h3 className="text-lg text-stack font-bold border-l-8 border-stack pl-4 mb-6">
+                <h3 className="text-lg text-havelock-blue font-bold border-l-8 border-havelock-blue pl-4 mb-6">
                   LANGUAGES
                 </h3>
                 <ul>
@@ -180,7 +180,7 @@ const Resume: NextPage = () => {
           {/* Resume footer */}
           <div className="flex justify-center gap-4">
             {/* Github */}
-            <div className="flex items-center gap-1 hover:text-stack">
+            <div className="flex items-center gap-1 hover:text-havelock-blue">
               <FaGithubSquare className="w-5 h-5" />
               <a href="https://github.com/dotslash21" className="text-sm">
                 github.com/dotslash21
@@ -188,7 +188,7 @@ const Resume: NextPage = () => {
             </div>
 
             {/* Linkedin */}
-            <div className="flex items-center gap-1 hover:text-stack">
+            <div className="flex items-center gap-1 hover:text-havelock-blue">
               <FaLinkedin className="w-5 h-5" />
               <a
                 href="https://linkedin.com/in/arunangshubsws"
@@ -199,7 +199,7 @@ const Resume: NextPage = () => {
             </div>
 
             {/* Github */}
-            <div className="flex items-center gap-1 hover:text-stack">
+            <div className="flex items-center gap-1 hover:text-havelock-blue">
               <FaTwitterSquare className="w-5 h-5" />
               <a href="https://twitter.com/arunangshubsws" className="text-sm">
                 @arunangshubsws

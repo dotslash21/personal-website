@@ -14,7 +14,9 @@ const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
     <ul className="flex justify-center gap-8 font-bold text-gray-500">
       <li
         className={`p-1 cursor-pointer ${
-          selected == 'all' ? 'text-stack border-stack border-t-2' : ''
+          selected == 'all'
+            ? 'text-havelock-blue border-havelock-blue border-t-2'
+            : ''
         }`}
         onClick={() => setSelected('all')}
       >
@@ -22,7 +24,9 @@ const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
       </li>
       <li
         className={`p-1 cursor-pointer ${
-          selected == 'webapps' ? 'text-stack border-stack border-t-2' : ''
+          selected == 'webapps'
+            ? 'text-havelock-blue border-havelock-blue border-t-2'
+            : ''
         }`}
         onClick={() => setSelected('webapps')}
       >
@@ -30,7 +34,9 @@ const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
       </li>
       <li
         className={`p-1 cursor-pointer ${
-          selected == 'mobileapps' ? 'text-stack border-stack border-t-2' : ''
+          selected == 'mobileapps'
+            ? 'text-havelock-blue border-havelock-blue border-t-2'
+            : ''
         }`}
         onClick={() => setSelected('mobileapps')}
       >
@@ -38,7 +44,9 @@ const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
       </li>
       <li
         className={`p-1 cursor-pointer ${
-          selected == 'frontend' ? 'text-stack border-stack border-t-2' : ''
+          selected == 'frontend'
+            ? 'text-havelock-blue border-havelock-blue border-t-2'
+            : ''
         }`}
         onClick={() => setSelected('frontend')}
       >
@@ -46,7 +54,9 @@ const FilterBar = ({ onChange }: { onChange: (selected: string) => void }) => {
       </li>
       <li
         className={`p-1 cursor-pointer ${
-          selected == 'backend' ? 'text-stack border-stack border-t-2' : ''
+          selected == 'backend'
+            ? 'text-havelock-blue border-havelock-blue border-t-2'
+            : ''
         }`}
         onClick={() => setSelected('backend')}
       >
@@ -60,7 +70,7 @@ const Portfolio: NextPage = () => {
   return (
     <>
       {/* Heading section */}
-      <section className="p-4 lg:p-12 bg-pearl-bush-600">
+      <section className="p-4 lg:p-12 bg-hint-of-red-600">
         <div className="flex flex-col items-center max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold">Portfolio</h2>
           <p className="text-center">
@@ -69,7 +79,7 @@ const Portfolio: NextPage = () => {
             I&apos;m taking on freelance work at the moment. Want some help
             building your software?
           </p>
-          <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-stack rounded shadow hover:bg-stack-700">
+          <button className="flex items-center space-x-2 mb-2 mt-4 px-6 py-2.5 text-white bg-havelock-blue rounded shadow hover:bg-havelock-blue-700">
             <FaPaperPlane />
             <span className="font-bold">Hire Me</span>
           </button>
@@ -85,7 +95,7 @@ const Portfolio: NextPage = () => {
           {Array.from(Array(4).keys()).map((i) => (
             <div
               key={i}
-              className="mt-4 rounded bg-pearl-bush text-gray-800 shadow-lg"
+              className="mt-4 rounded bg-hint-of-red text-gray-800 shadow-lg"
             >
               <div className="relative w-11/12 aspect-square mx-auto -mt-4 drop-shadow-xl rounded overflow-hidden">
                 <Image

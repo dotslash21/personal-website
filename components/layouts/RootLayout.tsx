@@ -23,7 +23,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <div className="flex flex-col h-screen lg:flex-row lg:h-fit">
       {/* Sidebar container */}
-      <aside className="w-screen bg-stack flex-shrink-0 lg:basis-72 lg:h-screen">
+      <aside className="w-screen bg-havelock-blue flex-shrink-0 lg:basis-72 lg:h-screen">
         {/* Flex container */}
         <div className="flex flex-col justify-start">
           {/* Name */}
@@ -59,35 +59,35 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="w-8 h-8 cursor-pointer hover:text-stack-700" />
+                  <FaGithub className="w-8 h-8 cursor-pointer hover:text-havelock-blue-700" />
                 </a>
                 <a
                   href={'https://www.facebook.com/itsmearunangshu/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="w-8 h-8 cursor-pointer hover:text-stack-700" />
+                  <FaLinkedin className="w-8 h-8 cursor-pointer hover:text-havelock-blue-700" />
                 </a>
                 <a
                   href={'https://twitter.com/arunangshubsws'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter className="w-8 h-8 cursor-pointer hover:text-stack-700" />
+                  <FaTwitter className="w-8 h-8 cursor-pointer hover:text-havelock-blue-700" />
                 </a>
                 <a
                   href={'https://www.facebook.com/itsmearunangshu/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook className="w-8 h-8 cursor-pointer hover:text-stack-700" />
+                  <FaFacebook className="w-8 h-8 cursor-pointer hover:text-havelock-blue-700" />
                 </a>
                 <a
                   href={'mailto:arunangshubsws@gmail.com'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaEnvelope className="w-8 h-8 cursor-pointer hover:text-stack-700" />
+                  <FaEnvelope className="w-8 h-8 cursor-pointer hover:text-havelock-blue-700" />
                 </a>
               </div>
               {/* Divider */}
@@ -97,25 +97,25 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             {/* Page navigation section */}
             <section className="flex flex-col items-center justify-start w-full">
               <ul className="flex flex-col w-48 text-white">
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
+                <li className="flex items-center space-x-2 p-2 hover:text-havelock-blue-700">
                   <FaUser />
                   <Link href={'/'}>
                     <span className="font-bold cursor-pointer">About Me</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
+                <li className="flex items-center space-x-2 p-2 hover:text-havelock-blue-700">
                   <FaLaptopCode />
                   <Link href={'/portfolio'}>
                     <span className="font-bold cursor-pointer">Portfolio</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
+                <li className="flex items-center space-x-2 p-2 hover:text-havelock-blue-700">
                   <FaFileAlt />
                   <Link href={'/resume'}>
                     <span className="font-bold cursor-pointer">Resume</span>
                   </Link>
                 </li>
-                <li className="flex items-center space-x-2 p-2 hover:text-stack-700">
+                <li className="flex items-center space-x-2 p-2 hover:text-havelock-blue-700">
                   <FaEnvelopeOpenText />
                   <Link href={'/contact'}>
                     <span className="font-bold cursor-pointer">Contact</span>
@@ -123,7 +123,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
                 </li>
               </ul>
               {/* Hire me btn */}
-              <button className="flex items-center space-x-2 mb-2 mt-8 px-6 py-2.5 text-stack bg-white rounded shadow hover:bg-stack-700">
+              <button className="flex items-center space-x-2 mb-2 mt-8 px-6 py-2.5 text-havelock-blue bg-white rounded shadow hover:bg-havelock-blue-700">
                 <FaPaperPlane />
                 <span className="font-bold">Hire Me</span>
               </button>
@@ -139,21 +139,21 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       {/* Sidebar container end */}
 
       {/* Main container */}
-      <div className="flex flex-col basis-full overflow-auto text-gray-800 bg-pearl-bush lg:h-screen">
+      <div className="flex flex-col basis-full overflow-auto text-gray-800 bg-hint-of-red lg:h-screen">
         <main>{children}</main>
 
-        <footer className="flex items-center justify-center mt-auto py-8 text-white bg-cape-cod-400">
+        <footer className="flex items-center justify-center mt-auto py-8 text-white bg-san-juan-400">
           <p>
             Made with <FaHeart className="text-red-500 inline-block" /> and{' '}
             <a
               href="https://nextjs.org/"
-              className="text-stack-300 hover:text-slate-200 hover:underline"
+              className="text-havelock-blue-300 hover:text-slate-200 hover:underline"
             >
               Next.js
             </a>{' '}
             by{' '}
             <a
-              className="text-stack-300 hover:text-slate-200 hover:underline"
+              className="text-havelock-blue-300 hover:text-slate-200 hover:underline"
               href="https://github.com/dotslash21"
             >
               Arunangshu Biswas

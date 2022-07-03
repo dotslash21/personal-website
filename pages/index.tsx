@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       {/* About Me section */}
-      <section className="p-4 lg:p-12 bg-pearl-bush-600">
+      <section className="p-4 lg:p-12 bg-hint-of-red-600">
         <div className="container mx-auto">
           <h2 className="text-5xl font-bold mb-1">Arunangshu Biswas</h2>
           <h3 className="font-extralight text-2xl mb-3">Software Engineer</h3>
@@ -17,14 +17,14 @@ const Home: NextPage = () => {
             I&apos;m a self-taught, passionate software engineer specalized in
             developing scalable backend solutions. I hail from{' '}
             <a
-              className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700"
+              className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700"
               href="https://www.google.com/maps/place/India/@20.7509337,73.7370457,5z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288"
             >
               India
             </a>{' '}
             and currentlly working at{' '}
             <a
-              className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700"
+              className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700"
               href="https://www.crio.do/"
             >
               Crio.Do
@@ -33,13 +33,13 @@ const Home: NextPage = () => {
             development as well. Want to know how I may help your organization?
             Check out my project{' '}
             <Link href={'/portfolio'}>
-              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+              <span className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700">
                 portfolio
               </span>
             </Link>{' '}
             and online{' '}
             <Link href={'/resume'}>
-              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+              <span className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700">
                 resume
               </span>
             </Link>
@@ -47,13 +47,13 @@ const Home: NextPage = () => {
           </p>
           <div className="flex space-x-4">
             <Link href={'/portfolio'}>
-              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-stack rounded shadow hover:bg-stack-700">
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-havelock-blue rounded shadow hover:bg-havelock-blue-700">
                 <FaLaptopCode />
                 <span className="font-bold">View Portfolio</span>
               </button>
             </Link>
             <Link href={'/resume'}>
-              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-twine rounded shadow hover:bg-twine-700">
+              <button className="flex items-center space-x-2 mb-2 mt-4 px-4 py-1.5 text-white bg-bali-hai rounded shadow hover:bg-bali-hai-700">
                 <FaFileAlt />
                 <span className="font-bold">View Resume</span>
               </button>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       {/* What I do section */}
       <section className="p-4 lg:p-12">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold border-l-8 border-stack pl-4 mb-4">
+          <h2 className="text-4xl font-bold border-l-8 border-havelock-blue pl-4 mb-4">
             My Skills
           </h2>
 
@@ -77,13 +77,13 @@ const Home: NextPage = () => {
             technical skill sets and technologies I use. Want to find out more
             about my experience? Check out my online{' '}
             <Link href={'/resume'}>
-              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+              <span className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700">
                 resume
               </span>
             </Link>{' '}
             and project{' '}
             <Link href={'/portfolio'}>
-              <span className="text-stack-600 cursor-pointer hover:underline hover:text-stack-700">
+              <span className="text-havelock-blue-600 cursor-pointer hover:underline hover:text-havelock-blue-700">
                 portfolio
               </span>
             </Link>
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
 
           {/* View more btn */}
           <Link href={'/skills'}>
-            <button className="flex items-center space-x-2 my-4 px-4 py-1.5 mx-auto text-white bg-stack rounded shadow hover:bg-stack-700">
+            <button className="flex items-center space-x-2 my-4 px-4 py-1.5 mx-auto text-white bg-havelock-blue rounded shadow hover:bg-havelock-blue-700">
               <FaChartBar />
               <span className="font-bold">View More</span>
             </button>
@@ -120,16 +120,19 @@ const Home: NextPage = () => {
       </section>
 
       {/* Featured projects */}
-      <section className="p-4 text-white bg-cape-cod lg:p-12">
+      <section className="p-4 text-white bg-san-juan lg:p-12">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold border-l-8 border-stack pl-4 mb-12">
+          <h2 className="text-4xl font-bold border-l-8 border-havelock-blue pl-4 mb-12">
             Featured Projects
           </h2>
 
           {/* Project cards */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {Array.from(Array(4).keys()).map((i) => (
-              <div key={i} className="mt-4 rounded bg-pearl-bush text-gray-800">
+              <div
+                key={i}
+                className="mt-4 rounded bg-hint-of-red text-gray-800"
+              >
                 <div className="relative w-11/12 aspect-square mx-auto -mt-4 drop-shadow-xl rounded overflow-hidden">
                   <Image
                     src={'/personal-website/pocketdict.webp'}
