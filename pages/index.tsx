@@ -134,6 +134,7 @@ const Home: NextPage = () => {
                 imageSrc={'/personal-website/pocketdict.webp'}
                 title={'Project Heading'}
                 description={'Project description. Lorem ipsum dolor sit amet.'}
+                slug={`pocket-dictionary`}
                 key={i}
               />
             ))}
